@@ -1,7 +1,7 @@
 # 🎬 MovieListAPI
 
 A simple REST API built with **Node.js, Express, and SQLite** for managing a list of movies.
-Supports full CRUD functionality with input validation.
+Supports full CRUD functionality with input validation. Includes a simple HTML/CSS/JS frontend.
 
 ---
 
@@ -14,6 +14,7 @@ Supports full CRUD functionality with input validation.
 * Delete a movie
 * Built-in validation for all inputs
 * SQLite database (auto-created)
+* Simple frontend to view movies in the browser
 
 ---
 
@@ -22,6 +23,7 @@ Supports full CRUD functionality with input validation.
 * Node.js
 * Express
 * SQLite3
+* HTML/CSS/JavaScript (frontend)
 
 ---
 
@@ -53,6 +55,8 @@ Server runs on:
 ```
 http://localhost:3000
 ```
+
+The frontend is served statically from the `public/` folder. Open `http://localhost:3000` in your browser to view all movies.
 
 ---
 
@@ -184,6 +188,10 @@ A Postman collection JSON file is included in the repository.
 
 ```
 movieListAPI/
+├── public/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 ├── server.js
 ├── movies.db
 ├── package.json
@@ -200,8 +208,9 @@ movieListAPI/
 * `node_modules/` is excluded via `.gitignore`
 * Duplicate movies are currently allowed
 * SQLite stores booleans as `0` and `1`
-* Quary parameter for the genre is case sensitive (first letter needs to be capitalised. E.g. "Sci-Fi" or "Horror")
+* Query parameter for the genre is case sensitive (first letter needs to be capitalised. E.g. "Sci-Fi" or "Horror")
 * PUT requires all fields (no PATCH for partial updates)
+* `cors` is included as a dependency to support frontend development via Live Server
 
 ---
 
