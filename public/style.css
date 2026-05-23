@@ -1,0 +1,70 @@
+:root {
+  --bg: #1f2428;
+  --surface: #272b30;
+  --surface-soft: #31363c;
+  --text: #e8ecf1;
+  --muted: #9aa1a8;
+  --border: #3d4248;
+  --accent: #8fa7b3;
+  --accent-strong: #b3c1cc;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th {
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: var(--surface-soft);
+  transition: background 0.2s ease;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* no real media queries as of yet but this is a backend assignment afterall */

@@ -1,8 +1,11 @@
 const express = require("express");
 const sqlite3 = require("sqlite3");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
+
 app.use(express.json());
+app.use(cors());
 
 const db = new sqlite3.Database("./movies.db");
 
