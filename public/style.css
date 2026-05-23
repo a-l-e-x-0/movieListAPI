@@ -24,3 +24,47 @@ body {
 * {
   box-sizing: border-box;
 }
+
+table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th {
+  background: var(--surface-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: var(--surface-soft);
+  transition: background 0.2s ease;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* no real media queries as of yet but this is a backend assignment afterall */
