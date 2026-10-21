@@ -32,7 +32,7 @@ Supports full CRUD functionality with input validation. Includes a simple HTML/C
 Clone the repository:
 
 ```bash
-git clone https://github.com/xd-kirby/movieListAPI.git
+git clone https://github.com/a-l-e-x-0/movieListAPI.git
 cd movieListAPI
 ```
 
